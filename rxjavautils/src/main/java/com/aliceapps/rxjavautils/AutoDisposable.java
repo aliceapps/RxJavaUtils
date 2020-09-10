@@ -22,10 +22,10 @@ public class AutoDisposable implements LifecycleObserver {
             throw new Throwable("must bind AutoDisposable to a Lifecycle first");
     }
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+  /*  @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     public void onResume() {
         compositeDisposable.clear();
-    }
+    }*/
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     public void onDestroy() {

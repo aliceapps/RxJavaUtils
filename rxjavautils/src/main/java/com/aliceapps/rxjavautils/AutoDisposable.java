@@ -10,10 +10,15 @@ import io.reactivex.disposables.Disposable;
 public class AutoDisposable implements LifecycleObserver {
     private CompositeDisposable compositeDisposable;
 
-    public void bindTo(Lifecycle lifecycle) {
+    public AutoDisposable(Lifecycle lifecycle) {
         lifecycle.addObserver(this);
         compositeDisposable = new CompositeDisposable();
     }
+
+   /* public void bindTo(Lifecycle lifecycle) {
+        lifecycle.addObserver(this);
+        compositeDisposable = new CompositeDisposable();
+    }*/
 
     public void add(Disposable disposable) throws Throwable {
         if (compositeDisposable != null)

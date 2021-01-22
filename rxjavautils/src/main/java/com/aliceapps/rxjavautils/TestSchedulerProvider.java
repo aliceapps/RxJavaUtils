@@ -15,7 +15,7 @@ public class TestSchedulerProvider  implements BaseSchedulerProvider {
      * Initialises the Scheduler with provided TestScheduler
      * @param scheduler provides TestScheduler that should be used
      */
-    TestSchedulerProvider(TestScheduler scheduler) {
+    public TestSchedulerProvider(TestScheduler scheduler) {
         testScheduler = scheduler;
     }
 

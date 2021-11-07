@@ -16,7 +16,7 @@ import io.reactivex.disposables.Disposable;
  * @version 16.09.2020
  */
 public class AutoDisposable implements LifecycleObserver {
-    private CompositeDisposable compositeDisposable;
+    private final CompositeDisposable compositeDisposable;
 
     /**
      * AutoDisposable constructor. Creates new CompositeDisposable object and adds lifecycle observer.
